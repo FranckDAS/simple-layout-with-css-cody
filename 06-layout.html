@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>HTML - LAYOUTS</title>
+	<meta charset="utf-8">
+	<META name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	
+		
+</head>
+	<body>
+
+		<header>
+			
+			<h2>title page</h2>
+		</header>
+			<section>
+				<nav>
+					<ul>
+						<li><a href="#home">home</a></li>
+						<li><a href="#sobre">sobre</a></li>
+						<li><a href="#contato">contato</a></li>
+					</ul>
+				</nav>
+
+				<article>
+					
+					<h1>Title section</h1>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, facilisis nec elementum quis, tristique a ligula. Duis imperdiet, sapien sit amet fringilla suscipit, ante turpis pellentesque mauris, et consectetur velit arcu sit amet purus. Curabitur ultrices, nisi sit amet egestas vulputate, neque nulla facilisis nulla, ut posuere tellus nisi id felis. Nullam fringilla tellus nisi, a accumsan libero ultricies quis. Suspendisse semper leo orci, ut venenatis quam bibendum et. Pellentesque finibus arcu sed lorem condimentum, vitae pellentesque ante interdum. Nulla facilisi. Sed laoreet fermentum magna, id auctor augue sagittis sit amet. Integer eget posuere enim, eu sodales eros. Duis id ex euismod risus lobortis posuere. Vestibulum nec feugiat urna.</p>
+
+					<p>Aliquam et gravida neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis tincidunt consectetur nisi, vitae maximus nisl efficitur eu. Vestibulum eget pharetra mi, quis cursus tortor. Maecenas auctor volutpat dui, sed iaculis tortor elementum vitae. Phasellus commodo dui id tellus suscipit pharetra feugiat sit amet orci. Phasellus eleifend, odio et semper rhoncus, diam ex venenatis justo, ut dapibus nulla dui rhoncus enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc vel enim eget lacus lobortis pulvinar sed sit amet ipsum. Vestibulum et odio facilisis, suscipit nisl a, hendrerit libero. Cras sagittis sagittis arcu, in molestie ante tincidunt sed.</p>
+
+				</article>
+
+
+			</section>
+				<footer>
+					<p>Desenovlvido por Franck</p>
+				</footer>
+
+		
+
+	
+</body>
+</html>
